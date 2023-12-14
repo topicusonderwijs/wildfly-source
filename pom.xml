@@ -840,7 +840,21 @@
             <name>JBoss Public Repository Group</name>
             <url>${maven.repository.url}</url>
             <layout>default</layout>
-        </repository>
+		</repository>
+		<repository>
+			<releases>
+				<enabled>true</enabled>
+				<updatePolicy>never</updatePolicy>
+			</releases>
+			<snapshots>
+				<enabled>true</enabled>
+				<updatePolicy>never</updatePolicy>
+			</snapshots>
+			<id>topicus-repository</id>
+			<name>Topicus.Education Artifactory</name>
+			<url>https://repo.topicusonderwijs.nl/artifactory/maven</url>
+			<layout>default</layout>
+		</repository>
     </repositories>
 
     <pluginRepositories>
